@@ -1,0 +1,173 @@
+
+
+  
+.herosection{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  
+  .herosectionheader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  
+  .herosection .heropic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0px;
+    border: solid;
+    width: 80%;
+    height: 80vh;
+    background-image: url(/images/download\ \(23\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    box-shadow: 1px 1px 40px blue;
+  }
+  
+  
+  .herosection .heropic h2 q{
+    font-size: 40px;
+    color: var(--color-secondary);
+    font-style: italic;
+  }
+  
+  .herosection .heropic p{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  .herosection .heropic  button{
+    width: 100px;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    box-shadow: 1px 1px 80px blue;
+    cursor: pointer;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: btngloweffect 2s  ease-in-out 1s infinite alternate-reverse both;
+  
+  }
+  
+  @keyframes btngloweffect {
+    0%, 100% {
+      box-shadow: 1px 0px 40px var(--color-secondary);
+    }
+  
+    50% {
+      box-shadow: 1px 0px 20px var(--color-accent);
+    }
+  
+  }
+  
+  .herointro{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 20px;
+  }
+  
+  .herointro .card{
+    width: 90%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: rgba(5, 26, 4, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    box-shadow: 1px 1px 20px rgb(99, 99, 99);
+    padding: 12px;
+  }
+  
+  .herointro .card .cardtext {
+    color: var(--color-black);
+    width: 300px;
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  
+  .herointro .card .cardtext h3 {
+    color: var(--color-primary);
+    font-size: 32px;
+    
+  }
+  
+  .herointro .card .cardimage {
+    width: 50%;
+    height: 500px;
+    background-color: #0400ff;
+  }
+ 
+  @media screen and (max-width: 1000px) {
+    
+    
+  .herosection .heropic h2 q{
+    font-size: 30px;
+    color: var(--color-secondary);
+  }
+  
+  .herointro .card .cardtext {
+      width: 50%;
+      padding: 12px;
+    }
+  
+  }
+  
+  
+  
+  @media screen and (max-width: 600px) {
+    
+    
+    .herosection .heropic h2 q{
+      font-size: 30px;
+      color: var(--color-secondary);
+    }
+
+    .herointro .card {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column-reverse;
+    }
+    
+    .herointro .card .cardtext {
+      color: var(--color-black);
+      width: 300px;
+      gap: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+
+    .herointro .card .cardimage {
+      width: 100%;
+      height: 300px;
+      background-color: #0400ff;
+    }
+    
+    }
+  
+  
