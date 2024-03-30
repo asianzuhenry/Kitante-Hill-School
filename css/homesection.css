@@ -25,7 +25,7 @@
   border: solid;
   width: 80%;
   height: 80vh;
-  background-color: var(--color-accent);
+  background-color: var(--color-white);
   /* background-image: url(/images/image1.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,7 +41,7 @@
 }
 
 .herosection .heropic p {
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
   font-size: large;
 }
