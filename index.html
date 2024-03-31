@@ -17,7 +17,7 @@
     <header class="header">
       <div class="logo">
         <img src="images/Logo.jpg" alt="" srcset="" />
-        <h2 oncanplay="homePage()">Kitante-Hill-School</h2>
+        <h2>Kitante-Hill-School</h2>
       </div>
       <div class="navigation">
         <input
@@ -31,10 +31,10 @@
         <ul class="menu">
           <li><a onclick="homePage()" class="" href="#">Home</a></li>
           <li><a onclick="aboutPage()" class="" href="#">About Us</a></li>
-          <li><a class="" href="#">Our Programs</a></li>
-          <li><a class="" href="#">Academics</a></li>
-          <li><a class="" href="#">Students</a></li>
-          <li><a class="" href="#">Galleries</a></li>
+          <li><a onclick="errorPage()" class="" href="#">Our Programs</a></li>
+          <li><a onclick="errorPage()" class="" href="#">Academics</a></li>
+          <li><a onclick="errorPage()" class="" href="#">Students</a></li>
+          <li><a onclick="errorPage()" class="" href="#">Galleries</a></li>
           <li><a onclick="contactPage()" class="" href="#">Contact Us</a></li>
         </ul>
       </div>
@@ -184,7 +184,14 @@
   </section>
 
   <!-- This is the contact page -->
-  <hr>
+  <!-- <hr> -->
+
+  <section class="errorsection" id="errorsection">
+    <div class="errorcontainer">
+    <h1>Oops!</h1>
+    <h2>404 - Page Not Found</h2>
+  </div>
+  </section>
   
   <section class="contactsection" id="contactsection">
     <div class="contactpagecontainer">
