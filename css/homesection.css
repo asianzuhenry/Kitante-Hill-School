@@ -23,6 +23,11 @@
   justify-content: space-evenly;
   gap: 12px;
   border: solid var(--color-primary);
+  
+  background-image: url("images/image1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 80%;
   height: 80vh;
   border-radius: 16px;
