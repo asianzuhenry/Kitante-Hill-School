@@ -50,7 +50,7 @@
 img.displaySlide{
   display: block;
   animation-name: fade;
-  animation-duration:  1s;
+  animation-duration:  2s;
 }
 
 
@@ -73,7 +73,7 @@ img.displaySlide{
 }
 
 @keyframes fade {
-  from {opacity: 0.2}
+  from {opacity: 0.5}
   to {opacity: 1}
 }
 

@@ -2,6 +2,7 @@
   padding: 0px;
   margin: 0px;
   font-family: Helvetica, Arial;
+  transition: 1s;
 }
 /*, sans-serif*/
 :root {
@@ -11,6 +12,7 @@
   --color-white: #ffff;
   --color-black: rgb(0, 0, 0) f;
   --shadow: rgba(94, 92, 92, 0.473);
+  --shadow-dark: rgb(34, 34, 34);
   --font-size: 16px;
   --bold: bold;
 }
@@ -67,7 +69,7 @@ h2 {
 footer {
   margin-top: 50px;
   position: static;
-  height: 2cm;
+  height: 4cm;
   width: 100%;
   box-shadow: 2px -10px 12px rgba(128, 128, 128, 0.247);
   display: flex;

@@ -21,11 +21,14 @@
       <img src="images/Logo.jpg" alt="" srcset="" />
       <h2>Kitante-Hill-School</h2>
     </div>
+    <div class="togglethemecolor">
+      <button class="btnlight" id="ChangeTheme" onclick="ChangeTheme()">☀</button>
+    </div>
     <div class="navigation">
       <input type="checkbox" class="toggle-menu" name="togglemenu" id="togglemenu" />
       <div class="hamburger"></div>
 
-      <ul class="menu">
+      <ul class="menu todark">
         <li><a onclick="homePage()" class="" href="#">Home</a></li>
         <li><a onclick="aboutPage()" class="" href="#">About Us</a></li>
         <li><a onclick="errorPage()" class="" href="#">Our Programs</a></li>
@@ -36,12 +39,8 @@
       </ul>
     </div>
   </header>
-  <!-- <h1>Kitante-Hill-School</h1> -->
-
   <hr>
-
   <!-- home section -->
-
   <section class="herosection" id="herosection">
     <div class="herosectionheader">
       <div class="heropic">
@@ -56,13 +55,9 @@
             <img src="images/image4.jpg" alt="Image Not Found....">
             <img src="images/image5.jpg" alt="Image Not Found....">
           </div>
-          <button class="prev" onclick="prevSlide()">&#10094</button>
-          <button class="next" onclick="nextSlide()">&#10095</button>
+          <!-- <button class="prev" onclick="prevSlide()">&#10094</button>
+          <button class="next" onclick="nextSlide()">&#10095</button> -->
         </div>
-        <!-- <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing crgre reergrt
-            gendi at dolorem tempora, autem quidem.
-          </p> -->
         <button onclick="contactPage()">Contact Us</button>
       </div>
     </div>
