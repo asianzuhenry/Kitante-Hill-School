@@ -47,8 +47,13 @@
   
   .aboutintro .card .cardimage {
     width: 50%;
-    height: 500px;
+    height: 100%;
     background-color: #0400ff;
+  }
+
+  .aboutintro .card .cardimage img {
+    width: 100%;
+    height: 100%;
   }
  
   @media screen and (max-width: 1000px) {

@@ -51,17 +51,22 @@ const contactPage = () => {
 let ToggleTheme = false;
 
 const ChangeTheme = () => {
-  var ChangeThemebtn = document.querySelector("#ChangeTheme");
-  var toDark = document.querySelector(".todark");
+  const ChangeThemebtn = document.querySelector("#ChangeTheme");
+  const toDarkMenu = document.querySelector("ul.menu")
 
   moon = "☽";
   sun = "☀";
 
   ChangeThemebtn.innerText = !ToggleTheme ? moon : sun;
-  ChangeThemebtn.className = !ToggleTheme ? "btnDark" : "btnlight";
-  document.body.style.backgroundColor = !ToggleTheme ? "var(--shadow-dark)" : "";
-  toDark.style.backgroundColor = !ToggleTheme ? "var(--shadow-dark)" : "";
-  !ToggleTheme ? (ToggleTheme = true) : (ToggleTheme = false);
+
+  document.body.style.backgroundColor = !ToggleTheme ? "black" : "";
+  document.body.style.color = !ToggleTheme ? "white" : "";
+
+  toDarkMenu.style.backgroundColor = !ToggleTheme ? "black" : "";
+  toDarkMenu.style.color = !ToggleTheme ? "white" : "";
   
+  
+  !ToggleTheme ? (ToggleTheme = true) : (ToggleTheme = false);
+
 };
 //
