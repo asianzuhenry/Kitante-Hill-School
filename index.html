@@ -1,236 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitante-Hill-School</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kitante-Hill-School</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/navigation.css" />
-  <link rel="stylesheet" href="css/homesection.css">
-  <link rel="stylesheet" href="css/aboutsection.css" />
-  <link rel="stylesheet" href="css/contactsection.css">
-
-
-</head>
-
-<body>
-  <header class="header">
-    <div class="logo">
-      <img src="images/Logo.jpg" alt="" srcset="" />
-      <h2 class="logoName">Kitante-Hill-School</h2>
-    </div>
-    <div class="togglethemecolor">
-      <button class="btnlight" id="ChangeTheme" onclick="ChangeTheme()">☀</button>
-    </div>
-    <div class="navigation">
-      <input type="checkbox" class="toggle-menu" name="togglemenu" id="togglemenu" />
-      <div class="hamburger"></div>
-
-      <ul class="menu">
-        <li><a onclick="homePage()" class="anchor" href="#">Home</a></li>
-        <li><a onclick="aboutPage()" class="anchor" href="#">About Us</a></li>
-        <li><a onclick="errorPage()" class="anchor" href="#">Our Programs</a></li>
-        <li><a onclick="errorPage()" class="anchor" href="#">Academics</a></li>
-        <li><a onclick="errorPage()" class="anchor" href="#">Projects</a></li>
-        <li><a onclick="errorPage()" class="anchor" href="#">Galleries</a></li>
-        <li><a onclick="contactPage()" class="anchor" href="#">Contact Us</a></li>
-      </ul>
-    </div>
-  </header>
-  <hr>
-  <!-- home section -->
-  <section class="herosection" id="herosection">
-    <div class="herosectionheader">
-      <div class="heropic">
-        <h2>
-          <q>Seek Knowledge and Serve With Integrity</q>
-        </h2>
-        <div class="slider">
-          <div class="slides">
-            <img src="images/image1.jpg" alt="Image Not Found....">
-            <img src="images/image2.jpg" alt="Image Not Found....">
-            <img src="images/image3.jpg" alt="Image Not Found....">
-            <img src="images/image4.jpg" alt="Image Not Found....">
-            <img src="images/image5.jpg" alt="Image Not Found....">
-          </div>
-          <!-- <button class="prev" onclick="prevSlide()">&#10094</button>
-          <button class="next" onclick="nextSlide()">&#10095</button> -->
-        </div>
-        <button onclick="contactPage()">Contact Us</button>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="images/Logo.jpg" alt="" srcset="" />
+        <h2 class="logoName">Kitante-Hill-School</h2>
       </div>
-    </div>
+      <div class="togglethemecolor">
+        <button class="btnlight" id="ChangeTheme" onclick="ChangeTheme()">
+          ☀
+        </button>
+      </div>
+      <div class="navigation">
+        <input
+          type="checkbox"
+          class="toggle-menu"
+          name="togglemenu"
+          id="togglemenu"
+        />
+        <div class="hamburger"></div>
+
+        <ul class="menu">
+          <li><a onclick="homePage()" class="anchor" href="#">Home</a></li>
+          <li><a onclick="aboutPage()" class="anchor" href="#">About Us</a></li>
+          <li>
+            <a onclick="errorPage()" class="anchor" href="#">Our Programs</a>
+          </li>
+          <li>
+            <a onclick="errorPage()" class="anchor" href="#">Academics</a>
+          </li>
+          <li><a onclick="errorPage()" class="anchor" href="#">Projects</a></li>
+          <li>
+            <a onclick="errorPage()" class="anchor" href="#">Galleries</a>
+          </li>
+          <li>
+            <a onclick="contactPage()" class="anchor" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <hr />
-    <div class="herointro">
-      <div class="card">
-        <div class="cardtext">
-          <h3>Heading One</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            expedita accusantium veniam excepturi saepe. Maiores aut beatae officiis
-            , autem fuga consequatur minus quidem quasi, quos dolorem ipsum quis, iste hic. Lorem ip
-            sum dolor sit amet consectetur adipisicing elit. Sint reiciendis eius consectetur minima quaerat ad nihil ad
-            ipisci error at itaque quam laborum, dicta iusto, deleniti incidunt est provident! Ipsam, arch
-            itecto? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, corrupti! Accusantium architecto
-            velit
-            fuga tempore debitis dicta esse impedit temporibus voluptate quas nam, quis, a delectus odio inventore
-            dolorem rerum!</p>
-        </div>
-        <div class="cardimage">
-          <img src="images/image6.jpg" alt="No Image Found">
-        </div>
-      </div>
-      <div class="card">
-        <div class="cardtext">
-          <h3>Heading Two</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            expedita accusantium veniam excepturi saepe. Maiores aut beatae officiis
-            , autem fuga consequatur minus quidem quasi, quos dolorem ipsum quis, iste hic. Lorem ip
-            sum dolor sit amet consectetur adipisicing elit. Sint reiciendis eius consectetur minima quaerat ad nihil ad
-            ipisci error at itaque quam laborum, dicta iusto, deleniti incidunt est provident! Ipsam, arch
-            itecto? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, corrupti! Accusantium architecto
-            velit
-            fuga tempore debitis dicta esse impedit temporibus voluptate quas nam, quis, a delectus odio inventore
-            dolorem rerum!</p>
-        </div>
-        <div class="cardimage">
-          <img src="images/image5.jpg" alt="No Image Found">
+    <!-- home section -->
+    <section class="herosection" id="herosection">
+      <div class="herosectionheader">
+        <div class="heropic">
+          <h2>
+            <q>Seek Knowledge and Serve With Integrity</q>
+          </h2>
+          <div class="slider">
+            <div class="slides">
+              <img src="images/image1.jpg" alt="Image Not Found...." />
+              <img src="images/image2.jpg" alt="Image Not Found...." />
+              <img src="images/image3.jpg" alt="Image Not Found...." />
+              <img src="images/image4.jpg" alt="Image Not Found...." />
+              <img src="images/image5.jpg" alt="Image Not Found...." />
+            </div>
+            <!-- <button class="prev" onclick="prevSlide()">&#10094</button>
+          <button class="next" onclick="nextSlide()">&#10095</button> -->
+          </div>
+          <button onclick="contactPage()">Contact Us</button>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- This is the about page -->
-
-
-  <section class="aboutsection" id="aboutsection">
-
-    <div class="aboutintro">
-      <h2>About Us</h2>
-      <div class="card">
-        <div class="cardtext">
-          <h3>Heading One</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            expedita accusantium veniam excepturi saepe. Maiores aut beatae officiis
-            , autem fuga consequatur minus quidem quasi, quos dolorem ipsum quis, iste hic. Lorem ip
-            sum dolor sit amet consectetur adipisicing elit. Sint reiciendis eius consectetur minima quaerat ad nihil ad
-            ipisci error at itaque quam laborum, dicta iusto, deleniti incidunt est provident! Ipsam, arch
-            itecto? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, corrupti! Accusantium architecto
-            velit
-            fuga tempore debitis dicta esse impedit temporibus voluptate quas nam, quis, a delectus odio inventore
-            dolorem rerum!</p>
+      <hr />
+      <div class="herointro">
+        <div class="card">
+          <div class="cardtext">
+            <h3>Heading One</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis expedita accusantium veniam excepturi saepe. Maiores
+              aut beatae officiis , autem fuga consequatur minus quidem quasi,
+              quos dolorem ipsum quis, iste hic. Lorem ip sum dolor sit amet
+              consectetur adipisicing elit. Sint reiciendis eius consectetur
+              minima quaerat ad nihil ad ipisci error at itaque quam laborum,
+              dicta iusto, deleniti incidunt est provident! Ipsam, arch itecto?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
+              corrupti! Accusantium architecto velit fuga tempore debitis dicta
+              esse impedit temporibus voluptate quas nam, quis, a delectus odio
+              inventore dolorem rerum!
+            </p>
+          </div>
+          <div class="cardimage">
+            <img src="images/image6.jpg" alt="No Image Found" />
+          </div>
         </div>
-        <div class="cardimage">
-          <h4>IMAGE AS BACKGROUND</h4>
-        </div>
-      </div>
-      <div class="card">
-        <div class="cardtext">
-          <h3>Heading Two</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            expedita accusantium veniam excepturi saepe. Maiores aut beatae officiis
-            , autem fuga consequatur minus quidem quasi, quos dolorem ipsum quis, iste hic. Lorem ip
-            sum dolor sit amet consectetur adipisicing elit. Sint reiciendis eius consectetur minima quaerat ad nihil ad
-            ipisci error at itaque quam laborum, dicta iusto, deleniti incidunt est provident! Ipsam, arch
-            itecto? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, corrupti! Accusantium architecto
-            velit
-            fuga tempore debitis dicta esse impedit temporibus voluptate quas nam, quis, a delectus odio inventore
-            dolorem rerum!</p>
-        </div>
-        <div class="cardimage">
-          <h4>IMAGE AS BACKGROUND</h4>
-        </div>
-      </div>
-      <div class="card">
-        <div class="cardtext">
-          <h3>Heading Three</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            expedita accusantium veniam excepturi saepe. Maiores aut beatae officiis
-            , autem fuga consequatur minus quidem quasi, quos dolorem ipsum quis, iste hic. Lorem ip
-            sum dolor sit amet consectetur adipisicing elit. Sint reiciendis eius consectetur minima quaerat ad nihil ad
-            ipisci error at itaque quam laborum, dicta iusto, deleniti incidunt est provident! Ipsam, arch
-            itecto? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, corrupti! Accusantium architecto
-            velit
-            fuga tempore debitis dicta esse impedit temporibus voluptate quas nam, quis, a delectus odio inventore
-            dolorem rerum!</p>
-        </div>
-        <div class="cardimage">
-          <h4>IMAGE AS BACKGROUND</h4>
+        <div class="card">
+          <div class="cardtext">
+            <h3>Heading Two</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis expedita accusantium veniam excepturi saepe. Maiores
+              aut beatae officiis , autem fuga consequatur minus quidem quasi,
+              quos dolorem ipsum quis, iste hic. Lorem ip sum dolor sit amet
+              consectetur adipisicing elit. Sint reiciendis eius consectetur
+              minima quaerat ad nihil ad ipisci error at itaque quam laborum,
+              dicta iusto, deleniti incidunt est provident! Ipsam, arch itecto?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
+              corrupti! Accusantium architecto velit fuga tempore debitis dicta
+              esse impedit temporibus voluptate quas nam, quis, a delectus odio
+              inventore dolorem rerum!
+            </p>
+          </div>
+          <div class="cardimage">
+            <img src="images/image5.jpg" alt="No Image Found" />
+          </div>
         </div>
       </div>
-      <div class="card">
-        <div class="cardtext">
-          <h3>Heading Four</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            expedita accusantium veniam excepturi saepe. Maiores aut beatae officiis
-            , autem fuga consequatur minus quidem quasi, quos dolorem ipsum quis, iste hic. Lorem ip
-            sum dolor sit amet consectetur adipisicing elit. Sint reiciendis eius consectetur minima quaerat ad nihil ad
-            ipisci error at itaque quam laborum, dicta iusto, deleniti incidunt est provident! Ipsam, arch
-            itecto? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, corrupti! Accusantium architecto
-            velit
-            fuga tempore debitis dicta esse impedit temporibus voluptate quas nam, quis, a delectus odio inventore
-            dolorem rerum!</p>
+    </section>
+
+    <!-- This is the about page -->
+
+    <section class="aboutsection" id="aboutsection">
+      <div class="aboutintro">
+        <h2>About Us</h2>
+        <div class="card">
+          <div class="cardtext">
+            <h3>Heading One</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis expedita accusantium veniam excepturi saepe. Maiores
+              aut beatae officiis , autem fuga consequatur minus quidem quasi,
+              quos dolorem ipsum quis, iste hic. Lorem ip sum dolor sit amet
+              consectetur adipisicing elit. Sint reiciendis eius consectetur
+              minima quaerat ad nihil ad ipisci error at itaque quam laborum,
+              dicta iusto, deleniti incidunt est provident! Ipsam, arch itecto?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
+              corrupti! Accusantium architecto velit fuga tempore debitis dicta
+              esse impedit temporibus voluptate quas nam, quis, a delectus odio
+              inventore dolorem rerum!
+            </p>
+          </div>
+          <div class="cardimage">
+            <h4>IMAGE AS BACKGROUND</h4>
+          </div>
         </div>
-        <div class="cardimage">
-          <h4>IMAGE AS BACKGROUND</h4>
+        <div class="card">
+          <div class="cardtext">
+            <h3>Heading Two</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis expedita accusantium veniam excepturi saepe. Maiores
+              aut beatae officiis , autem fuga consequatur minus quidem quasi,
+              quos dolorem ipsum quis, iste hic. Lorem ip sum dolor sit amet
+              consectetur adipisicing elit. Sint reiciendis eius consectetur
+              minima quaerat ad nihil ad ipisci error at itaque quam laborum,
+              dicta iusto, deleniti incidunt est provident! Ipsam, arch itecto?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
+              corrupti! Accusantium architecto velit fuga tempore debitis dicta
+              esse impedit temporibus voluptate quas nam, quis, a delectus odio
+              inventore dolorem rerum!
+            </p>
+          </div>
+          <div class="cardimage">
+            <h4>IMAGE AS BACKGROUND</h4>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardtext">
+            <h3>Heading Three</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis expedita accusantium veniam excepturi saepe. Maiores
+              aut beatae officiis , autem fuga consequatur minus quidem quasi,
+              quos dolorem ipsum quis, iste hic. Lorem ip sum dolor sit amet
+              consectetur adipisicing elit. Sint reiciendis eius consectetur
+              minima quaerat ad nihil ad ipisci error at itaque quam laborum,
+              dicta iusto, deleniti incidunt est provident! Ipsam, arch itecto?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
+              corrupti! Accusantium architecto velit fuga tempore debitis dicta
+              esse impedit temporibus voluptate quas nam, quis, a delectus odio
+              inventore dolorem rerum!
+            </p>
+          </div>
+          <div class="cardimage">
+            <h4>IMAGE AS BACKGROUND</h4>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardtext">
+            <h3>Heading Four</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis expedita accusantium veniam excepturi saepe. Maiores
+              aut beatae officiis , autem fuga consequatur minus quidem quasi,
+              quos dolorem ipsum quis, iste hic. Lorem ip sum dolor sit amet
+              consectetur adipisicing elit. Sint reiciendis eius consectetur
+              minima quaerat ad nihil ad ipisci error at itaque quam laborum,
+              dicta iusto, deleniti incidunt est provident! Ipsam, arch itecto?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
+              corrupti! Accusantium architecto velit fuga tempore debitis dicta
+              esse impedit temporibus voluptate quas nam, quis, a delectus odio
+              inventore dolorem rerum!
+            </p>
+          </div>
+          <div class="cardimage">
+            <h4>IMAGE AS BACKGROUND</h4>
+          </div>
+        </div>
+        <div class="card">
+          <audio controls src="audio/anthem.m4a"></audio>
         </div>
       </div>
-      <div class="card">
-        <div class="cardtext">
-          <h3>Heading Five</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            expedita accusantium veniam excepturi saepe. Maiores aut beatae officiis
-            , autem fuga consequatur minus quidem quasi, quos dolorem ipsum quis, iste hic. Lorem ip
-            sum dolor sit amet consectetur adipisicing elit. Sint reiciendis eius consectetur minima quaerat ad nihil ad
-            ipisci error at itaque quam laborum, dicta iusto, deleniti incidunt est provident! Ipsam, arch
-            itecto? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, corrupti! Accusantium architecto
-            velit
-            fuga tempore debitis dicta esse impedit temporibus voluptate quas nam, quis, a delectus odio inventore
-            dolorem rerum!</p>
-        </div>
-        <div class="cardimage">
-          <h4>IMAGE AS BACKGROUND</h4>
+    </section>
+
+    <section class="projectssection" id="projectssection">
+      <div class="projectscontainer">
+        <!-- <video src="https://youtu.be/4TFXL9AKhsE?t=3"></video> -->
+      </div>
+    </section>
+
+    <!-- This is the contact page -->
+    <!-- <hr> -->
+
+    <!-- 
+      https://www.youtube.com/shorts/J0RjG3HaTgY
+      https://www.youtube.com/watch?v=VgDytOsG6Xo this one
+https://www.facebook.com/kitantehillschoolkololo/
+https://www.youtube.com/@kitantehillschool3186
+https://www.facebook.com/kitantehillschool/
+https://www.instagram.com/explore/locations/1006871205/kitante-hill-secondary-school/
+     -->
+
+    <section class="errorsection" id="errorsection">
+      <div class="errorcontainer">
+        <h1>Oops!</h1>
+        <h2>404 - Page Not Found</h2>
+      </div>
+    </section>
+
+    <section class="contactsection" id="contactsection">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contactform">
+          <form id="form" action="#">
+            <div class="input-control">
+              <label for="username">Username</label>
+              <input
+                id="username"
+                name="username"
+                autocomplete="username"
+                type="text"
+              />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label for="email">Email</label>
+              <input id="email" name="email" autocomplete="email" type="text" />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <div class="error"></div>
+            </div>
+            <button type="submit">Send</button>
+          </form>
         </div>
       </div>
-  </section>
+    </section>
 
-  <section class="projectssection" id="projectssection">
-    <div class="projectscontainer">
-      <!-- <video src="https://youtu.be/4TFXL9AKhsE?t=3"></video> -->
-    </div>
-  </section>
+    <footer>
+          <div class="contactlinks">
+            <ul>
+              <li>
+                <a
+                  href="https://www.youtube.com/@kitantehillschool3186"
+                  target="_blank"
+                >
+                  <span class="icon">
+                    <img
+                      src="images/icons/icon-social-youtube-outline-64.webp"
+                      alt=""
+                    />
+                  </span>
+                  <span class="text">
+                    <h4>YouTube</h4>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/kitantehillschool/"
+                  target="_blank"
+                >
+                  <span class="icon">
+                    <img src="images/icons/Facebook-64.webp" alt="" />
+                  </span>
+                  <span class="text">
+                    <h4>Facebook</h4>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/explore/locations/1006871205/kitante-hill-secondary-school/"
+                  target="_blank"
+                >
+                  <span class="icon">
+                    <img
+                      src="images/icons/Instagram_glyph_svg-64.webp"
+                      alt=""
+                    />
+                  </span>
+                  <span class="text">
+                    <h4>Instagram</h4>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon">
+                    <img src="images/icons/phone3-64.webp" alt="" />
+                  </span>
+                  <span class="text">
+                    <h4>Tell:+01234567</h4>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+    </footer>
 
-  <!-- This is the contact page -->
-  <!-- <hr> -->
-
-  <section class="errorsection" id="errorsection">
-    <div class="errorcontainer">
-      <h1>Oops!</h1>
-      <h2>404 - Page Not Found</h2>
-    </div>
-  </section>
-
-  <section class="contactsection" id="contactsection">
-    <div class="contactpagecontainer">
-      <h2>Contact Us </h2>
-      <form class="form" action="#">
-        <input type="text" id="name" name="name" autocomplete="name" placeholder="Name" />
-        <input type="email" name="email" id="email" autocomplete="email" placeholder="Email" />
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-        <button>Send</button>
-        <!-- <input type="button" value="" /> -->
-      </form>
-    </div>
-  </section>
-
-  <footer>
-    <h1>
-      <q>This is the footer</q>
-    </h1>
-  </footer>
-
-  <script src="js/script.js"></script>
-  <script src="js/slider.js"></script>
-</body>
-
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/form.js"></script>
+  </body>
 </html>
